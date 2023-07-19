@@ -1,5 +1,5 @@
 <h1>
-    <a href="https://stronggym.netlify.app/" target="_blank"><img src="assets/img/banner5.png" target="_blank" alt=""></a>
-    <p>StrongGYM 2.0 💪💪</p>
-    <p>Projeto feito na NLW Return da Rockeseat com intuito de fazer uma landing page responsiva e aprimorar os conhecimentos de HTML, CSS e JavaScript.</p>
+    <a href="https://flickpicks.netlify.app/" target="_blank"><img src="assets/img/banner6.png" target="_blank" alt=""></a>
+    <p>FlickPicks</p>
+    <p>Projeto feito com a API de filmes do TMDB utilizando HTML, CSS e JavaScript.</p>
 </h1>
