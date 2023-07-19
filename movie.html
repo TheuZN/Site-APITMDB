@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - FlickPicks</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.svg" alt="">
+                        <span>FlickPicks</span>
+                    </a>
+                </div>
+
+                <div class="header-menu">
+                    <button onclick="menuShow()"><img class="menu-mobile" src="assets/img/open.svg" alt=""></button>
+                </div>
+
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="movie.html">Movies</a></li>
+                        <li><a href="series.html">TV Shows</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-search">
+                    <button><input placeholder="Search Here" type="text"></button>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <ul>
+                    <li class="nav-item"><a onclick="closeMenu()" href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a onclick="closeMenu()" href="movie.html" class="nav-link">Movies</a></li>
+                    <li class="nav-item"><a onclick="closeMenu()" href="series.html" class="nav-link">TV Shows</a></li>
+                </ul>
+                <div class="header-search-mobile">
+                    <button><img class="ico-mobile" src="assets/img/ico-search.svg" alt=""><input type="text" placeholder="Search Here"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+        <div class="wrapper">
+            <div class=" page-banner"><img src="assets/img/banner4.png" alt=""></div>
+        </div>
+
+        <section id="movie-gallery">
+            <div class="wrapper">
+                <h2 class="title">Movies</h2>
+                    <div id="gallery-movie">
+                        <div class="none">
+                            <div class="card-movie">
+                                <img src="assets/img/movie.jpg" alt="">
+                                <div class="card-info">
+                                    <h3 class="title-movie">Uncharted</h3>
+                                    <span class="rating">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section> 
+
+    <footer>
+        <div class="wrapper">
+            <div class="info-footer">
+
+                <div class="flickpicks-footer">
+                    <a href=""><img src="assets/img/logo.svg" alt=""></a>
+                    <h3>FlickPicks</h3>
+                </div>
+
+                <div class="contact-footer">
+                    <h3>CONTACT</h3>
+                    <a href=""><span>flickpicks@sac.com</span></a>
+                    <a href=""><span>88 4154-8569</span></a>
+                    <a href=""><span>88 98165-5247</span></a>
+                </div>
+
+                <div class="legal-footer">
+                    <h3>LEGAL</h3>
+                    <a href=""><span>Terms of use</span></a>
+                    <a href=""><span>Privacy Policy</span></a>
+                </div>
+
+                <div class="social-footer">
+                    <h3>SOCIAL MEDIA</h3>
+                    <a href=""><img class="ico-footer" src="assets/img/ico-face.svg" alt=""></a>
+                    <a href=""><img class="ico-footer" src="assets/img/ico-insta.svg" alt=""></a>
+                    <a href=""><img class="ico-footer" src="assets/img/ico-twitter.svg" alt=""></a>
+                    <a href=""><img class="ico-footer" src="assets/img/ico-link.svg" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://github.com/TheuZN"><span class="ico">Feito por Mateus Melo</span></a>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
