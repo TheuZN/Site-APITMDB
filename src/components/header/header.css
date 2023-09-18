@@ -1,0 +1,156 @@
+header {
+    width: 100%;
+    box-shadow: 0 4px 6px 0 #888;
+    padding-block: 0.5rem;
+    position: fixed;
+    background-color: #fff;
+}
+
+.wrapper .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo a img {
+    width: 5rem;
+    margin-right: 0.3rem;
+}
+
+.header-logo a span {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-family: "Raleway";
+}
+
+.header-menu button img {
+    width: 5rem;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-search {
+    display: none;
+}
+
+.header-search-mobile input {
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.mobile-nav {
+    padding-block: 1rem;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.2rem;
+    font-size: 2.3rem;
+}
+
+.mobile-nav ul li {
+    margin-bottom: 1rem;
+}
+
+.mobile-nav ul li a {
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.mobile-nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-menu img {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+    
+    .header-nav, .header-search {
+        display: block;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .header-search img {
+        width: 3rem;
+    }
+    
+    .header-search input {
+        border: 2px solid var(--primary-color);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-nav ul {
+        display: flex;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .header-nav ul li a {
+        color: var(--primary-color);
+        font-weight: 900;
+        margin: 0 2rem;
+        position: relative;
+    }
+
+    .header-nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: currentColor;
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-transform-origin: right;
+                transform-origin: right;
+        transition: -webkit-transform 250ms ease-in;
+        transition: transform 250ms ease-in;
+        transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+    }
+
+    .header-nav ul li a:hover::after {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: left;
+        transform-origin: left;
+  }
+    
+    .header-nav ul li:last-child a {
+        margin-right: 0;
+    }
+    
+}

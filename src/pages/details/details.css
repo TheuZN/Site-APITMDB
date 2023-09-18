@@ -1,0 +1,111 @@
+.detail {
+    margin-bottom: 3rem;
+}
+
+.detail img {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.col-b {
+    text-align: left;
+}
+
+.col-b h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.col-b span {
+    display: block;
+    font-size: 1.8rem;
+    margin-block: 1rem;
+}
+
+.col-b span b {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.col-b span  {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.col-b button {
+    padding: 2rem 4rem;
+    background-color: var(--primary-color);
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.col-b button:hover {
+    opacity: 0.9;
+}
+
+.col-b a button {
+    color: white;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper .detail{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'A B';
+        gap: 4rem;
+    }
+
+    .detail .col-a {
+        grid-area: A;
+        text-align: center;
+        align-self: center;    
+    }
+
+    .col-b span {
+        display: block;
+        font-size: 1.7rem;
+        margin-block: 1rem;
+    }
+
+    .col-b span b {
+        color: var(--primary-color);
+        font-size: 2rem;
+    }
+
+    .detail .col-a img {
+        width: 30rem;
+    }
+    
+    .detail .col-b {
+        grid-area: B;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .detail .col-a img {
+        width: 40rem;
+    }
+
+    .col-b h1 {
+        font-size: 3rem;
+    }
+    
+    .col-b span {
+        font-size: 2rem;
+    }
+    
+    .col-b span b {
+        font-size: 2.2rem;
+    }
+    
+    .col-b button {
+        font-size: 2rem;
+    }
+}
+

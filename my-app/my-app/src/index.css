@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=Raleway:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #001d4a;
+  --secundary-color: #a5edf5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family:'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.wrapper {    
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.ico-menu {
+  width: 5rem;
+}
+
+.ico-mobile {
+  width: 3.5rem;
+}
+
+.ico-footer {
+  width: 3.8rem;
+  margin: 0 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+section {
+  padding: 8rem 0 1rem;
+}
+
+.title { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+}
+
+.gallery-trend {
+    background-color: #f8f9fa;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: wrap nowrap;
+    gap: 3rem;
+}
+
+.gallery ul li {
+    background-color: black;
+    padding: 3rem;
+}
+
+.gallery a {
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.gallery a img {
+    min-width: 200px;
+    border-radius: 2rem;
+}
+
+.average {
+    display: block;
+    margin-block: 1rem;
+    width: 100%;
+    background-color: var(--secundary-color);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    font-weight: 900;
+}
+
+.title-movie {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {    
+    width: min(130rem, 100%);
+    display: grid;
+}
+
+  .burger-menu {
+    display: none;
+  }
+}
