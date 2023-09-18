@@ -1,6 +1,6 @@
 import "./banner-end.css";
 
-export default function Footer() {
+export default function BannerEnd() {
     return (
         <section id="banner-end">
         <div className="wrapper">
